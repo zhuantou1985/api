@@ -12,7 +12,7 @@ error_reporting(E_ALL & ~E_NOTICE);
 require_once dirname(__FILE__) . '/include/start.php';
 $app = new JieApp();
 
-$params = array('control'=>'data', 'action'=>'list', 'condition'=>array('type'=>3, 'notids'=>'46622', 'tag'=>'美丽|大方', 'maxid'=>'', 'per'=>'10', 'tag'=>'', 'page'=>'1', 'order'=>'id', 'sort'=>'desc'));
+$params = array('control'=>'data', 'action'=>'list', 'condition'=>array('order'=>'id', 'sort'=>'desc'));
 $result = $app->run($params);
 
 print_r($result);exit; 
