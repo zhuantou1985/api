@@ -10,7 +10,7 @@
 ini_set('display_errors','on');
 error_reporting(E_ALL & ~E_NOTICE); 
 require_once dirname(__FILE__) . '/include/start.php';
-$app = new JieApp();
+$app = new App();
 
 $params = array('control'=>'data', 'action'=>'list', 'condition'=>array('order'=>'id', 'sort'=>'desc'));
 $result = $app->run($params);
