@@ -12,6 +12,8 @@ class App {
 	
 	// 初始化
 	public function init(){ 
+		//header("Content-type: text/html; charset=utf-8");
+		date_default_timezone_set('Asia/Chongqing');
 		// 项目编译
 		$this->bulid();
 		// 设置错误级别

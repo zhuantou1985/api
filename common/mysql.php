@@ -3,13 +3,6 @@
 //      Master/Slave数据库读写分开操作类
 //----------------------------------------------------
 /**
- * 常量定义
- */
-define("_DB_INSERT", 1);
-define("_DB_UPDATE", 2);
-    
-    
-/**
  * DB Common class
  *
  * 描述：能够分别处理一台Master写操作，多台Slave读操作
